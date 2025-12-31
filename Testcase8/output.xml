@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2025-12-31T12:26:07.430847" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase8" source="C:\Users\User\TestAutomationLab\testcase8.robot">
+<test id="s1-t1" name="Scenario: Invalid Phone Number" line="19">
+<kw name="Open Browser To Registration Page">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-31T12:26:07.475441" level="FAIL">Evaluating expression "sys.modules['selenium.webdriver'].ChromeOptions()" failed: KeyError: 'selenium.webdriver'</msg>
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-31T12:26:07.474979" elapsed="0.000644">Evaluating expression "sys.modules['selenium.webdriver'].ChromeOptions()" failed: KeyError: 'selenium.webdriver'</status>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${chrome_options.binary_location}</var>
+<arg>${CHROME_BROWSER_PATH}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-12-31T12:26:07.475767" elapsed="0.000022"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${service}</var>
+<arg>sys.modules["selenium.webdriver.chrome.service"].Service(executable_path=r"${CHROME_DRIVER_PATH}")</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-12-31T12:26:07.475879" elapsed="0.000019"/>
+</kw>
+<kw name="Create Webdriver">
+<arg>Chrome</arg>
+<arg>options=${chrome_options}</arg>
+<arg>service=${service}</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.476012" elapsed="0.000021"/>
+</kw>
+<kw name="Go To">
+<arg>${URL}</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.476131" elapsed="0.000019"/>
+</kw>
+<status status="FAIL" start="2025-12-31T12:26:07.474508" elapsed="0.001741">Evaluating expression "sys.modules['selenium.webdriver'].ChromeOptions()" failed: KeyError: 'selenium.webdriver'</status>
+</kw>
+<kw name="Input Text">
+<arg>id=firstname</arg>
+<arg>Somyod</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.476448" elapsed="0.000019"/>
+</kw>
+<kw name="Input Text">
+<arg>id=lastname</arg>
+<arg>Sodsai</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.476649" elapsed="0.000018"/>
+</kw>
+<kw name="Input Text">
+<arg>id=organization</arg>
+<arg>CS KKU</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.476842" elapsed="0.000018"/>
+</kw>
+<kw name="Input Text">
+<arg>id=email</arg>
+<arg>somyod@kkumail.com</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.477032" elapsed="0.000017"/>
+</kw>
+<kw name="Input Text">
+<arg>id=phone</arg>
+<arg>1234</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.477215" elapsed="0.000018"/>
+</kw>
+<kw name="Click Button">
+<arg>id=registerButton</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.477400" elapsed="0.000018"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>id=errors</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.477586" elapsed="0.000018"/>
+</kw>
+<kw name="Element Should Contain">
+<arg>id=errors</arg>
+<arg>Please enter a valid phone number!!</arg>
+<status status="NOT RUN" start="2025-12-31T12:26:07.477768" elapsed="0.000017"/>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg time="2025-12-31T12:26:07.478811" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" start="2025-12-31T12:26:07.478780" elapsed="0.000071">No keyword with name 'Close Browser' found.</status>
+</kw>
+<doc>ทดสอบกรณีเบอร์โทรศัพท์ไม่ถูกต้อง</doc>
+<status status="FAIL" start="2025-12-31T12:26:07.473479" elapsed="0.005489">Evaluating expression "sys.modules['selenium.webdriver'].ChromeOptions()" failed: KeyError: 'selenium.webdriver'
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<status status="FAIL" start="2025-12-31T12:26:07.432359" elapsed="0.047403"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcase8" id="s1" pass="0" fail="1" skip="0">Testcase8</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

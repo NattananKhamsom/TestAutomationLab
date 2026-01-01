@@ -4,7 +4,7 @@
 
 ##  รายละเอียดการทดสอบ (Test Scenarios)
 1. **Open Registration Page Success**: ตรวจสอบการเปิดหน้าเว็บพื้นฐาน
-2. **Invalid Phone Number**: ตรวจสอบระบบ Validation ผิด
+2. **Invalid & Missing**: ตรวจสอบระบบ Validation ผิด และ กรณีกรอกข้อมูลไม่ครบถ้วน
 
 ##  สภาพแวดล้อมในการทดสอบ (Test Environment)
 - **OS**: Windows 10

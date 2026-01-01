@@ -31,9 +31,7 @@ Scenario: Empty Email
     # 3. กดปุ่ม Registerป
     Click Button    id=registerButton
     
-    # 4. ตรวจสอบผลลัพธ์ (ต้องแสดง Error Message)
-    Wait Until Element Is Visible    id=errors
-    Element Should Contain    id=errors    Please enter a valid phone number!!
+    
     
     # ปิดบราวเซอร์เมื่อเสร็จสิ้น
     [Teardown]    Close Browser

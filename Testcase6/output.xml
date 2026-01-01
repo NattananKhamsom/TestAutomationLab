@@ -1,110 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2025-12-31T12:16:35.554521" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-02T00:26:46.160913" rpa="false" schemaversion="5">
 <suite id="s1" name="Testcase6" source="C:\Users\User\TestAutomationLab\testcase6.robot">
 <test id="s1-t1" name="Scenario: Empty Email" line="19">
 <kw name="Open Browser To Registration Page">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-12-31T12:16:35.862367" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000023D5D3F9400&gt;</msg>
+<msg time="2026-01-02T00:26:46.438467" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x00000279F6929400&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-12-31T12:16:35.861821" elapsed="0.000595"/>
+<status status="PASS" start="2026-01-02T00:26:46.437930" elapsed="0.000584"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-12-31T12:16:35.862900" level="INFO">${chrome_options.binary_location} = C:\Users\User\TestAutomationLab\chrome-win64\chrome.exe</msg>
+<msg time="2026-01-02T00:26:46.438994" level="INFO">${chrome_options.binary_location} = C:\Users\User\TestAutomationLab\chrome-win64\chrome.exe</msg>
 <var>${chrome_options.binary_location}</var>
 <arg>${CHROME_BROWSER_PATH}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-12-31T12:16:35.862567" elapsed="0.000374"/>
+<status status="PASS" start="2026-01-02T00:26:46.438664" elapsed="0.000371"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-12-31T12:16:35.863616" level="INFO">${service} = &lt;selenium.webdriver.chrome.service.Service object at 0x0000023D5D3F92B0&gt;</msg>
+<msg time="2026-01-02T00:26:46.439701" level="INFO">${service} = &lt;selenium.webdriver.chrome.service.Service object at 0x00000279F69292B0&gt;</msg>
 <var>${service}</var>
 <arg>sys.modules["selenium.webdriver.chrome.service"].Service(executable_path=r"${CHROME_DRIVER_PATH}")</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-12-31T12:16:35.863056" elapsed="0.000594"/>
+<status status="PASS" start="2026-01-02T00:26:46.439150" elapsed="0.000587"/>
 </kw>
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-12-31T12:16:35.863982" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2026-01-02T00:26:46.440067" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
 <arg>Chrome</arg>
 <arg>options=${chrome_options}</arg>
 <arg>service=${service}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-12-31T12:16:35.863766" elapsed="1.173652"/>
+<status status="PASS" start="2026-01-02T00:26:46.439851" elapsed="1.105395"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-12-31T12:16:37.037798" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
+<msg time="2026-01-02T00:26:47.545643" level="INFO">Opening url 'http://localhost:7272/Lab4/Registration.html'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-12-31T12:16:37.037616" elapsed="0.087594"/>
+<status status="PASS" start="2026-01-02T00:26:47.545414" elapsed="0.029564"/>
 </kw>
-<status status="PASS" start="2025-12-31T12:16:35.861137" elapsed="1.264212"/>
+<status status="PASS" start="2026-01-02T00:26:46.437245" elapsed="1.137874"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-31T12:16:37.126035" level="INFO">Typing text 'Somyod' into text field 'id=firstname'.</msg>
+<msg time="2026-01-02T00:26:47.577119" level="INFO">Typing text 'Somyod' into text field 'id=firstname'.</msg>
 <arg>id=firstname</arg>
 <arg>Somyod</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-31T12:16:37.125644" elapsed="0.099649"/>
+<status status="PASS" start="2026-01-02T00:26:47.576713" elapsed="0.151624"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-31T12:16:37.225802" level="INFO">Typing text 'Sodsai' into text field 'id=lastname'.</msg>
+<msg time="2026-01-02T00:26:47.729101" level="INFO">Typing text 'Sodsai' into text field 'id=lastname'.</msg>
 <arg>id=lastname</arg>
 <arg>Sodsai</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-31T12:16:37.225589" elapsed="0.063636"/>
+<status status="PASS" start="2026-01-02T00:26:47.728871" elapsed="0.061495"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-31T12:16:37.289976" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
+<msg time="2026-01-02T00:26:47.790877" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
 <arg>id=organization</arg>
 <arg>CS KKU</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-31T12:16:37.289608" elapsed="0.064792"/>
+<status status="PASS" start="2026-01-02T00:26:47.790654" elapsed="0.054670"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-31T12:16:37.354912" level="INFO">Typing text '091-001-1234' into text field 'id=phone'.</msg>
+<msg time="2026-01-02T00:26:47.845930" level="INFO">Typing text '091-001-1234' into text field 'id=phone'.</msg>
 <arg>id=phone</arg>
 <arg>091-001-1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-31T12:16:37.354673" elapsed="0.050321"/>
+<status status="PASS" start="2026-01-02T00:26:47.845676" elapsed="0.089309"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-12-31T12:16:37.405449" level="INFO">Clicking button 'id=registerButton'.</msg>
+<msg time="2026-01-02T00:26:47.935646" level="INFO">Clicking button 'id=registerButton'.</msg>
 <arg>id=registerButton</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-31T12:16:37.405263" elapsed="0.062025"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id=errors</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-31T12:16:37.467742" elapsed="0.017120"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-12-31T12:16:38.429678" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-12-31T12:16:38.429859" level="FAIL">Element 'id=errors' should have contained text 'Please enter a valid phone number!!' but its text was '*Please enter your email!!'.</msg>
-<arg>id=errors</arg>
-<arg>Please enter a valid phone number!!</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="FAIL" start="2025-12-31T12:16:37.485144" elapsed="0.946794">Element 'id=errors' should have contained text 'Please enter a valid phone number!!' but its text was '*Please enter your email!!'.</status>
+<status status="PASS" start="2026-01-02T00:26:47.935439" elapsed="0.076340"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-31T12:16:38.432330" elapsed="2.224061"/>
+<status status="PASS" start="2026-01-02T00:26:48.012226" elapsed="2.239486"/>
 </kw>
 <doc>ทดสอบกรณีที่ไม่มี Email</doc>
-<status status="FAIL" start="2025-12-31T12:16:35.860146" elapsed="4.798205">Element 'id=errors' should have contained text 'Please enter a valid phone number!!' but its text was '*Please enter your email!!'.</status>
+<status status="PASS" start="2026-01-02T00:26:46.436350" elapsed="3.816127"/>
 </test>
-<status status="FAIL" start="2025-12-31T12:16:35.556098" elapsed="5.109494"/>
+<status status="PASS" start="2026-01-02T00:26:46.162417" elapsed="4.093333"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Testcase6" id="s1" pass="0" fail="1" skip="0">Testcase6</stat>
+<stat name="Testcase6" id="s1" pass="1" fail="0" skip="0">Testcase6</stat>
 </suite>
 </statistics>
 <errors>

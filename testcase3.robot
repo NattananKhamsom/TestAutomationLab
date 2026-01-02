@@ -23,7 +23,7 @@ Scenario: Empty First Name
     
     # 2. กรอกข้อมูลตามขั้นตอน
     
-    Input Text    id=lastname    Sodsai
+    Input Text    id=lastname    Somyod
     Input Text    id=organization    CS KKU
     Input Text    id=email    somyod@kkumail.com
     Input Text    id=phone    091-001-1234
